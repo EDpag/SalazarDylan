@@ -1,0 +1,159 @@
+body{
+    background-color: #f9f4ef;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "cabeza menu   menu    menu   "
+                         "cont1  cont2  cont3   publicidad  "
+                         "cont4  cont4  cont4   publicidad "
+                         "pie    pie    pie     publicidad   "
+    ;
+
+}
+.cabeza{
+    grid-area:cabeza;
+}
+.eslogan{
+    
+    margin:20px;
+    margin-left:50px;
+}
+.eslogan{
+    cursor:pointer;
+}
+
+/*EMPIEZA NAV*/
+
+.menu{
+    grid-area:menu;
+    width: 1200px;
+    padding: 30px;
+    position: relative;
+    /* background-color: #eaddcf; */
+    margin-top:25px;
+}
+#contenedor-recorredor{
+    margin-left:61px;
+}
+.navegador-ul{
+    position:absolute;
+    display: flex;
+    top:20px;
+    
+}
+.navegador-li{
+    margin:25px;
+    list-style-type:none;
+}
+.lenks{
+    font-family: monospace;
+    color:#8c7851;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.waajaja{
+    color:#574b33;
+}
+.lenks:hover{
+    color:#574b33;
+}
+.en-proceso{
+    color:#8c7851;
+    cursor: progress;
+}
+.login{
+    position:absolute;
+    top:42px;
+    right: 150px;
+}
+.login2{
+    position:absolute;
+    top:42px;
+    right:30px;
+}
+#wasap{
+    width:180px;
+    height:58px;
+    text-align:center;
+
+}
+/*AQUI ACABA NAV*/
+.cont1{
+    grid-area: cont1;
+}
+.card1{
+    background-color: red;
+}
+.cont2{
+    grid-area: cont2;
+    display: flex;
+}
+
+
+.cont3{
+    grid-area: cont3;
+}
+.cont4{
+    grid-area: cont4;
+}
+.card-img-top{
+    height: 198px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card1, .card2, .card3, .card4, .card5{
+    border-radius: 20px;
+    color:#020826;
+    background-color: #eaddcf;
+    margin-left:20px;
+    margin-top:20px;
+    height: 490px;
+}
+.card5{
+    height: 580px;
+}
+.publicidad{
+    grid-area: publicidad;
+    width: 100px;
+}
+.texto-publicidad{
+    color:#574b3376;
+    background-color: #eaddcf;
+    border: 2px;
+    padding: 50px;
+    width: 200px;
+    margin-left:-40px;
+    height: 1120px;
+    border-style: dotted;
+}
+h1{
+    transform:rotate(90deg);
+    font-size:78px;
+
+}
+#boton1,#boton2,#boton3,#boton4,#boton5{
+    margin-left:65px;
+}
+#boton1{
+    margin-top:50px;
+}
+#boton2{
+    margin-top: 30px;
+}
+#boton3{
+    margin-top: 30px;
+}
+#boton4{
+    margin-top: 8px;
+}
+#boton5{
+    margin-top: 30px;
+}
+.pie{
+    grid-area: pie;
+    padding:40px;
+    cursor: progress;
+}
+.padre{
+    margin-left:660px;
+}

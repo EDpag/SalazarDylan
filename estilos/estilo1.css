@@ -1,0 +1,418 @@
+body{
+    background-color: #f9f4ef;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "cabeza menu   menu       menu"
+                         "cont1  cont1  contenido2 contenido2"
+                         "pie    pie    pie        pie"
+    ;
+
+}
+.cabeza{
+    grid-area:cabeza;
+}
+.eslogan{
+    
+    margin:20px;
+    margin-left:50px;
+}
+.eslogan{
+    cursor:pointer;
+}
+
+
+/*EMPIEZA NAV*/
+
+.menu{
+    grid-area:menu;
+    width: 1100px;
+    padding: 20px;
+    position: relative;
+    /* background-color: #eaddcf; */
+    margin-top:25px;
+}
+.navegador-ul{
+    position:absolute;
+    display: flex;
+    top:20px;
+    
+}
+.navegador-li{
+    margin:25px;
+    list-style-type:none;
+}
+.lenks{
+    font-family: monospace;
+    color:#8c7851;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.lenks:hover{
+    color:#574b33;
+}
+.en-proceso{
+    color:#8c7851;
+    cursor: progress;
+}
+.login{
+    position:absolute;
+    top:42px;
+    right: 150px;
+}
+.login2{
+    position:absolute;
+    top:42px;
+    right:30px;
+}
+#wasap{
+    width:180px;
+    height:58px;
+    text-align:center;
+
+}
+/*AQUI ACABA NAV*/
+
+/*EMPIEZA CONT1*/
+.cont1{
+    grid-area:cont1;
+}
+.text{
+    font-family: cursive;
+    font-weight: bolder;
+    margin:20px;
+    color:#020826;
+}
+span{
+    color:rgb(123, 123, 243);
+}
+.card{
+    margin-left:150px;
+    width: 420px;
+}
+
+.iconos{
+    margin-top:10px;
+    margin-left: 10px;
+}
+.i{
+    width: 40px;
+    border-radius:10px;
+    margin-left:3px;
+}
+.i:hover{
+    cursor:pointer;
+}
+/*AQUI ACABA CONT1*/
+
+
+
+
+
+/*COMIENZA CONT2*/
+.contenido2{
+    grid-area:contenido2;
+}
+.padre-chat{
+    width:500px;
+    height:630px;
+    background-color: #eaddcf;
+    margin-left: 0px;
+    margin-top:50px;
+    border-radius: 20px;
+    position: relative;
+}
+.triangulo{
+    position:absolute;
+    width: 0px; /*no sirve para nada */
+    height:0px;/*no sirve para nada*/
+    border-bottom: 23px solid #eaddcf;
+    border-left: 23px solid transparent;
+    border-right:23px solid transparent;
+    rotate:-90deg;
+    top:280px;
+    left:-30px;
+}
+.texto-chat{
+    color:#020826;
+    margin-left:30px;
+}
+.textarea{
+    margin-left:20px;
+    width: 456px;
+    height: 140px;
+    resize: none;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+
+}
+.contenedor-chat{
+    width:400px;
+    margin:auto;
+    margin-top:20px;
+    height: 200px;
+}
+.per1{
+    margin: 15px;
+    width:40px;
+}
+.chat-1{
+    width: 369px;
+    height: 70px;
+    position: relative;    
+}
+.real-chat1{
+    position: absolute;
+    top:10px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    width: 230px;
+    padding-left:15px;
+
+}
+
+
+.per2{
+    margin: 15px;
+    width:40px;
+}
+.chat-2{
+    margin-top: 10px;
+    width: 369px;
+    height: 70px;
+    float: left;
+    position: relative;   
+     
+
+}
+.real-chat2{
+    position: absolute;
+    top: 12px;
+    left: 70px;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.impactao{
+
+    width: 40px;
+    
+}
+
+.per3{
+    margin: 15px;
+    width:40px;
+}
+.chat-3{
+    margin-top: 10px;
+    width: 369px;
+    height: 70px;
+    float: left;
+    position: relative;    
+
+}
+.real-chat3{
+    position: absolute;
+    top:10px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    width: 230px;
+    padding-left:15px;
+}
+.mas1, .mas3{
+    margin-top: 25px;
+    position: absolute;
+    width: 25px;
+    margin-left: 235px;
+}
+.mas2{
+    width: 25px;
+    margin-left: 70px;
+}
+.mas1, .mas2, .mas3{
+    cursor:pointer;
+}
+.mandar{
+    top:50px;
+    position: relative;
+    background-color:   #8c785172;
+
+    width: 500px;
+    height: 125px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.emoticones{
+    position:absolute;
+    left:30px;
+    top:10px;
+    width: 260px;
+    border-radius:10px;
+}
+.emoticones:hover{
+    cursor:pointer;
+}
+.medias{
+    position:absolute;
+    width:170px;
+    height:50px;
+    top:8px;
+    left:310px;
+}
+.contenedor-logos{
+    width:160px;
+    margin: auto;
+    margin-top:10px;
+}
+.foto-logo{
+    width: 36px;
+}
+.video-logo{
+    width: 36px;
+
+}
+.gale-logo{
+    width: 36px;
+
+}
+.plus-logo{
+    width: 36px;
+
+}
+.foto-logo:hover, .video-logo, .gale-logo, .plus-logo{
+    cursor:pointer;
+}
+
+
+
+.chat-enviar{
+    position: absolute;
+    top:70px;
+    left:30px;
+    background-color: white;
+    border-radius:10px;
+    height: 43px;
+    width: 440px;
+
+}
+.deah{
+    width: 375px;
+    height: 43px;
+    border: none;
+    outline:none;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#boton-enviar{
+    margin-top:-5px;
+    height: 43px;
+    width: 65px;
+    border-radius:10px;
+}
+.enviar-chat{
+    width: 10px;
+    height:10px;
+}
+
+
+
+/*AQUI ACABA CONT2*/
+.pie{
+    margin-top:100px;
+    grid-area:pie;
+    height: 350px;
+}
+.padre-foot{
+    width: 100%;
+    height:350px;
+    position:relative;
+}
+.consejo{
+    padding: 30px;
+    padding-left: 70px;
+    background-color: #eaddcf;
+}
+.texto-consejo{
+    position:absolute;
+    width:800px;
+}
+#boton-inscribirse{
+    background-color: #716040;
+    margin-top:5px;
+    width:200px;
+    height:50px;
+    margin-left:1120px;
+}
+
+.informaciones{
+    background-color: #8c7851;
+    
+    width: 100%;
+    height: 100%;
+    padding:50px;
+    padding-left: 100px;
+}
+.texto-informaciones{
+    color:#fffffe;
+    width:320px;
+    font-size:20px;
+
+}
+.contenedor-prop{
+    margin-left:70px;
+}
+.prop-logos{
+    width: 40px;
+    border-radius:20px;
+    margin-left:10px;
+    cursor: pointer;
+}
+.texto-columna1, .texto-columna2, .texto-columna3, .texto-columna4{
+    margin-left: 120px;
+
+}
+.li-prop1, .li-prop2, .li-prop3, .li-prop4{
+    margin:10px;
+    list-style-type: none;
+}
+.textos-prop{
+    position: absolute;
+    display: flex;
+    top:150px;
+    left:530px;
+}
+.linea{
+    position: absolute;
+    background-color: #716040;
+    width:1310px;
+    height: 2px;
+    left:80px;
+}
+.copy{
+    position: absolute;
+    color:#fffffe;
+    margin-top:30px;
+    left:590px;
+    word-spacing: 5px;
+}
+.logo-copy{
+    width: 25px;
+}
+
+
+/* 
+https://www.happyhues.co/palettes/11
+jijijija */

@@ -1,0 +1,160 @@
+body{
+    background-color: #f9f4ef;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "cabeza menu   menu   "    
+                         "cont1  cont1  cont1   " 
+                         "cont2  cont2  cont2  "
+                         "cont3  cont3  cont3  "    
+                         "pie    pie    pie     "   
+    ;
+
+}
+.cabeza{
+    grid-area:cabeza;
+}
+.eslogan{
+    
+    margin:20px;
+    margin-left:50px;
+}
+.eslogan{
+    cursor:pointer;
+}
+
+/*EMPIEZA NAV*/
+
+.menu{
+    grid-area:menu;
+    width: 1200px;
+    padding: 20px;
+    position: relative;
+    /* background-color: #eaddcf; */
+    margin-top:25px;
+}
+.contenedor-recorredor{
+    margin-left:60px;
+}
+.navegador-ul{
+    position:absolute;
+    display: flex;
+    top:20px;
+    
+}
+.navegador-li{
+    margin:25px;
+    list-style-type:none;
+}
+.lenks{
+    font-family: monospace;
+    color:#8c7851;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.waajaja{
+    color:#574b33;
+  
+}
+.lenks:hover{
+    color:#574b33;
+}
+.en-proceso{
+    color:#8c7851;
+    cursor: progress;
+}
+.login{
+    position:absolute;
+    top:42px;
+    right: 190px;
+}
+.login2{
+    position:absolute;
+    top:42px;
+    right:68px;
+}
+#wasap{
+    width:180px;
+    height:58px;
+    text-align:center;
+
+}
+/*aqui acaba nav*/
+
+.cont1{
+    grid-area: cont1;
+}
+.contenedor-carrusel1{
+    width: 600px;
+}
+.card1{
+    border-radius:20px;
+    margin:auto;
+    margin-top:20px;
+    width: 1200px;
+    background-color: #eaddcf;
+    position: relative;
+}
+.texto-card1{
+    position: absolute;
+    left:600px;
+    padding:30px;
+    width:600px;
+}
+
+/*COMIENZA CONTENIDO2*/
+.cont2{
+    grid-area: cont2;
+}
+.card2{
+    margin-top:50px;
+    border-radius:20px;
+    margin:auto;
+    margin-top:60px;
+    width: 1200px;
+    background-color: #eaddcf;
+    position: relative;
+}
+.texto-card2{
+    position: absolute;
+    padding:30px;
+    width:600px;
+}
+.contenedor-carrusel2{
+    margin-left: 599px;
+    width: 600px;
+}
+
+
+/*AQUI COMIENZA CONTENIDO3*/
+.cont3{
+    grid-area: cont3;
+}
+
+.contenedor-carrusel3{
+    width: 600px;
+}
+.card3{
+    margin-top:50px;
+    border-radius:20px;
+    margin:auto;
+    margin-top:60px;
+    width: 1200px;
+    background-color: #eaddcf;
+    position: relative;
+}
+.texto-card3{
+    position: absolute;
+    left:600px;
+    padding:30px;
+    width:600px;
+}
+/*AQUIE EMPIEZA EL FOOTERSITO*/
+.pie{
+    grid-area: pie;
+    padding:40px;
+    cursor: progress;
+}
+.padre{
+    margin-left:660px;
+}
